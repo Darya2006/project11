@@ -11,12 +11,7 @@ function sliderSecondBlock() {
     $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active');
 }
 
-$('.slick-next::beforeclick').on('click.first',function(){
-        $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).removeClass('active');
-        //$('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active');
-});
-
-$('.slick-next::beforeclick').on('click.first',function(){
-    //$('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).removeClass('active');
-    $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active');
+$('.reviews .reviewsBlock .info-block .slick-arrow').on('click',function sliderSecondBlock(){
+        $('.reviews .reviewsBlock .info-block .item.slick-active').removeClass('active');
+        $('.reviews .reviewsBlock .info-block .item.slick-active').eq(1).addClass('active');
 });
